@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+   
+    <!-- controls loop autoplay -->  
+    <div class="gallery-cont">
+        <!-- <div class="media-cont">
+            <div class="media">
+                
+                <video class="video" src="./myvideo.mp4"></video>
+            </div>
+            <div class="download">Download</div>
+            <div class="delete">Delete</div>
+        </div> -->
+    </div>
+
+    <div>
+        <button class="back-btn">Back</button>
+    </div>
+
+    <script src="./db.js"></script>
+    <script src="gallery.js"></script>
+    <script>
+        let backBtn = document.querySelector(".back-btn");
+        backBtn.addEventListener("click",(e)=>{
+        location.assign("./index.html");
+        });
+    </script>
+
+    
+    
+    
+    
+    
+</body>
+</html>

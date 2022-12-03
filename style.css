@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Abhishek Code */
+.video-cont{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+video{
+    height: 100%;
+    width: 100%;
+}
+.action-cont{
+    height: 12rem;
+    width: 5rem;
+    position: absolute;
+    top: calc((100vh - 12rem)/2);
+    left: calc((100vw - 10rem));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+.action-cont > *{
+    height: 5rem;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+.record-btn{
+    background-color: red;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+} 
+.capture-btn{
+    background-color: white;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+} 
+.timer-cont{
+    position: absolute;
+    bottom: 4rem;
+    left: 3rem;
+    color: rgb(138, 9, 9);
+    z-index: 2;
+}
+.timer{
+    display: none;
+    font-size: 1.2em;
+}
+.filter-cont{
+    height: 16rem;
+    width: 5rem;
+    position: absolute;
+    top: calc((100vh - 16rem)/2);
+    left: 3rem; 
+    z-index: 2;
+}
+.filter{
+    height: 4rem;
+    margin: 2px 2px 0 0;
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-size :100% 100%;
+    background-blend-mode: color-burn;
+}
+.brown{
+    background-color: #ffa50052;
+}
+.orange{
+    background-color: #a52a2a59;
+}
+.pink{
+    background-color: #ffc0cb57;
+}
+.tranparent{
+    background-color: transparent;
+}
+.material-icons{
+    color: white;
+    font-size: 3rem;
+    z-index: 2;
+}
+.gallery{
+    position: absolute;
+    right: 5.3rem;
+    bottom: 5rem;
+}
+.gallery:hover{
+    cursor: pointer;
+}
+.scale-capture{
+    animation-name: scale-capture;
+    animation-duration: 1s;
+}
+@keyframes scale-capture{
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.scale-record{
+    animation-name: scale-record;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+@keyframes scale-record{
+    0%
+    {
+        transform: scale(0.8);
+    }
+    50%
+    {
+        transform: scale(1.2);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+.filter-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw; 
+    z-index: 1;
+}
+
+
+ 
+
+/* My Code */
+/*.action-cont{
+    height: 5rem;
+    width : 12rem;
+    display: flex;
+    justify-content : space-around;
+}
+.action-cont > *{
+    height: 4rem;
+    width: 4rem;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.record-btn{
+    background-color: red;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}  
+.capture-btn{
+    background-color: green;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}  
+.video-cont{
+    width: 80%;
+    height: 800%;
+    background-color: black;
+    margin-top: 20px;
+}
+.filter-cont{
+    height: 16rem;
+    width: 5rem;
+    background-color: burlywood;
+    position: absolute;
+    top: calc((100vh - 12rem)/2);
+    right: 3rem;
+}
+.filter{
+    height: 4rem;
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-size :100% 100%;
+    background-blend-mode: color-burn;
+}
+.brown{
+    background-color: #ffa50052;
+}
+.orange{
+    background-color: #a52a2a59;
+}
+.pink{
+    background-color: #ffc0cb57;
+}
+.tranparent{
+    background-color: transparent;
+}
+.material-icons{
+    color: green;
+    font-size: 5rem;
+}
+.gallery:hover{
+    cursor: pointer;
+}
+.gallery{
+    position: absolute;
+    bottom: 8px;
+    right : 5.25rem;
+     z-index: 1;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+}
+
+.filter-video{
+    display: flex;
+} 
+.timer-action-gallery{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8px;
+
+}
+.timer-cont{
+    position: absolute;
+    left: 3rem;
+}
+
+.scale-capture{
+    animation-name: scale-capture;
+    animation-duration: 1s;
+}
+@keyframes scale-capture{
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+.scale-record{
+    animation-name: scale-capture;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+@keyframes scale-record{
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}*/
